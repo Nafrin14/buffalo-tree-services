@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function CTASection() {
   return (
     <section className="bg-green-800 py-20">
@@ -17,14 +18,19 @@ function CTASection() {
           Contact Buffalo Tree Service today for a free estimate.
         </p>
 
-        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-5">
-          <button className="bg-white text-green-800 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition w-full sm:w-auto text-center">
+       <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+          <Link
+            to="/contact"
+            className="bg-green-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-green-700 transition w-full sm:w-auto text-center"
+          >
             Get Free Estimate
-          </button>
-
-          <button className="border-2 border-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-green-800 transition w-full sm:w-auto text-center">
+          </Link>
+          <a
+            href="tel:+17162001550"
+            className="border border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-green-700 transition w-full sm:w-auto text-center"
+          >
             Call Now
-          </button>
+          </a>
         </div>
 
       </div>
