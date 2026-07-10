@@ -30,7 +30,7 @@ function Hero() {
           <Link
             to="/contact"
             aria-label="Request a free tree service estimate"
-            className="bg-green-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-300 transition w-full sm:w-auto text-center"
+            className="bg-green-800 text-white px-8 py-4 rounded-lg font-bold hover:bg-green-900 focus:outline-none focus:ring-4 focus:ring-green-300 transition w-full sm:w-auto text-center"
           >
             Get Free Estimate
           </Link>
