@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
-export default defineConfig({
-  base: "/buffalo-tree-services/",
+export default defineConfig(({ mode }) => ({
+  base: mode === "github" ? "/buffalo-tree-services/" : "/",
   plugins: [react(), tailwindcss()],
-});
+}));
